@@ -53,3 +53,5 @@ kramdown:
       line_numbers: false
 
 permalink: pretty
+
+favicon_ico: "{{ '/assets/images.png' }}"
