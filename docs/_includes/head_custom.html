@@ -1,19 +1,65 @@
 <style>
-/* Force Just-the-Docs dark palette (sidebar + content) */
-:root {
-  --body-background-color: #0e0f12;
-  --body-text-color: #e6e6e6;
-  --link-color: #8ab4f8;
-
-  --sidebar-background-color: #0b0c0f;
-  --sidebar-color: #e6e6e6;
-  --nav-child-link-color: #c9c9c9;
-  --nav-child-link-active-color: #ffffff;
-
-  --search-background-color: #111217;
-  --search-result-preview-text-color: #c9c9c9;
+/* Force dark theme and ensure sidebar visibility */
+:root, [data-color-mode="dark"] {
+  --body-background-color: #0e0f12 !important;
+  --sidebar-color: #0b0c0f !important;
+  --body-text-color: #e6e6e6 !important;
+  --link-color: #8ab4f8 !important;
+  --nav-child-link-color: #c9c9c9 !important;
+  --search-background-color: #111217 !important;
 }
+
+/* Ensure sidebar is visible */
+.side-bar {
+  display: flex !important;
+  flex-direction: column !important;
+  background-color: #0b0c0f !important;
+  border-right: 1px solid #2a2a2a !important;
+}
+
+/* Force navigation to show */
+.nav-list {
+  display: block !important;
+}
+
+.main-content-wrap {
+  display: block !important;
+}
+
+@media (min-width: 50rem) {
+  .side-bar {
+    width: 248px !important;
+    min-width: 248px !important;
+  }
+}
+
 @media (min-width: 66.5rem) {
-  .side-bar { position: sticky; top: 0; height: 100vh; overflow-y: auto; }
+  .side-bar { 
+    position: sticky; 
+    top: 0; 
+    height: 100vh; 
+    overflow-y: auto; 
+  }
+}
+
+/* Dark theme overrides */
+body {
+  background-color: #0e0f12 !important;
+  color: #e6e6e6 !important;
+}
+
+.site-header {
+  background-color: #0b0c0f !important;
+  border-bottom: 1px solid #2a2a2a !important;
+}
+
+.site-footer {
+  background-color: #0b0c0f !important;
+  border-top: 1px solid #2a2a2a !important;
 }
 </style>
+
+<!-- Force color mode to dark -->
+<script>
+  document.documentElement.setAttribute('data-color-mode', 'dark');
+</script>
