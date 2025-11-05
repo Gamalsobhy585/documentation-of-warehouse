@@ -1,6 +1,6 @@
 ---
 title: Structure of the Warehouse Module
-nav_order: 4
+nav_order: 5
 ---
 
 # Structure of the Warehouse Module

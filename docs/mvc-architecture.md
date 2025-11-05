@@ -1,6 +1,6 @@
 ---
 title: MVC Architecture in the Warehouse Module
-nav_order: 7
+nav_order: 8
 ---
 
 # MVC Architecture in the Warehouse Module

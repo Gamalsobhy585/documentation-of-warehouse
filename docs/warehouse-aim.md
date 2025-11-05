@@ -1,6 +1,6 @@
 ---
 title: Aim of the Warehouse Module
-nav_order: 2
+nav_order: 3
 ---
 
 # Aim of the Warehouse Module

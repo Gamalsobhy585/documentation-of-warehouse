@@ -1,6 +1,6 @@
 ---
 title: What is Warehouse?
-nav_order: 1
+nav_order: 2
 ---
 
 # What is Warehouse?

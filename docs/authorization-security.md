@@ -1,6 +1,6 @@
 ---
 title: Authorization & Security
-nav_order: 8
+nav_order: 9
 ---
 
 # Authorization & Security
