@@ -25,7 +25,6 @@ search:
 # Navigation
 heading_anchors: true
 
-# Logo - use absolute path with baseurl
 logo: "/assets/images.png"
 
 # External links
