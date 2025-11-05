@@ -1,7 +1,41 @@
+# ---- Site basics
 title: ERP Warehouse Developer Guide
+description: Internal documentation for the Warehouse module (Laravel 10)
+# If you’ll publish at https://your-org.github.io/developer-guide, leave url/baseurl empty.
+# If under a project subpath, set baseurl: "/developer-guide"
+url: ""
+baseurl: ""
+
+# ---- Theme (Just the Docs via remote_theme)
 remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+
+# ---- UI / UX
 search_enabled: true
 color_scheme: light
+heading_anchors: true
+logo: # e.g. /assets/logo.png  (put file in docs/assets and update path)
+
+# ---- GitHub link in header
 aux_links:
   "View on GitHub":
-    - "//github.com/your-org/developer-guide"
+    - "https://github.com/your-org/developer-guide"
+
+# ---- Footer
+footer_content: "© <script>document.write(new Date().getFullYear())</script> Your Company. All rights reserved."
+
+# ---- Navigation options
+nav_external_links:
+  - title: ERP Portal
+    url: https://erp.example.com
+
+# ---- Markdown / build
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: pretty
+
+# ---- If your content is in /docs (recommended for GitHub Pages ‘/docs’ source)
+# No need to change anything here—just make sure you set
+# Settings → Pages → Branch: main, Folder: /docs
