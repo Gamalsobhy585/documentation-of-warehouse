@@ -1,7 +1,9 @@
 title: ERP Warehouse Developer Guide
 description: Internal documentation for the Warehouse module (Laravel 10)
-url: ""
-baseurl: ""
+url: "https://gamalsobhy585.github.io"
+baseurl: "/documentation-of-warehouse"
+color_scheme: dark
+
 
 remote_theme: just-the-docs/just-the-docs
 plugins:
@@ -9,9 +11,8 @@ plugins:
 
 
 search_enabled: true
-color_scheme: dark        
 heading_anchors: true
-logo: "/assets/images.png"
+logo: "{{ '/assets/images.png' | relative_url }}"
 
 aux_links:
   "View on GitHub":
