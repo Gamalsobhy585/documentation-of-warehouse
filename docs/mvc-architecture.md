@@ -90,5 +90,5 @@ These components extend Laravel’s MVC structure to provide **automation**, **c
 
 ## 🧩 Full Module Structure
 
-You can view the complete Warehouse module structure here:
+You can view the complete Warehouse module structure [**here**](https://drive.google.com/file/d/1eC7vyoS_sMk82POM8dsYf_zfELHJUFeC/view?usp=drive_link){:target="_blank"}.
 

@@ -1,0 +1,11 @@
+<style>
+/* Keep the left sidebar fixed on desktop, scrollable when content is long */
+@media (min-width: 66.5rem) { /* Just-the-Docs desktop breakpoint */
+  .side-bar {
+    position: sticky;
+    top: 0;
+    height: 100vh;           /* full viewport height */
+    overflow-y: auto;        /* scroll the sidebar if it’s taller than the screen */
+  }
+}
+</style>

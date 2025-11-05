@@ -36,7 +36,7 @@ All tables in the Warehouse database:
 
 The Entity Relationship Diagram (ERD) visually represents how all entities are connected within the Warehouse module.
 
-👉 **See full ERD diagram here:** *(link to your ERD image or PDF, e.g. `/assets/warehouse-erd.png`)*
+👉 **See full ERD diagram [here](https://drive.google.com/file/d/1CqhVKmQy0yR92CHvDiwyNdJ8Qpt6xRKI/view?usp=sharing){:target="_blank"}**
 
 > Each major entity (Stock, Item, Package, Goods Receipt, Delivery, etc.) has clear one-to-many or many-to-many relationships that define the operational workflow of the Warehouse system.
 
