@@ -26,11 +26,11 @@ search:
 heading_anchors: true
 
 # Logo - use absolute path with baseurl
-logo: "/documentation-of-warehouse/assets/images.png"
+logo: "/assets/images.png"
 
 # External links
 aux_links:
-  "View on GitHub": "https://github.com/Gamalsobhy585/documentation-of-warehouse"
+  "View on GitHub": "https://github.com/EECWebTeam/erp-live"
 
 # Footer
 footer_content: "© 2025 EEC. All rights reserved."
@@ -43,7 +43,7 @@ exclude:
 # Navigation options
 nav_external_links:
   - title: ERP Portal
-    url: https://erp.example.com
+    url: https://eecgroup.online/erp/
 
 # Markdown configuration
 markdown: kramdown
