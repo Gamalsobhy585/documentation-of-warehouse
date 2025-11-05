@@ -9,17 +9,64 @@
   --search-background-color: #111217 !important;
 }
 
+/* Background logo watermark */
+.main-content-wrap::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  max-width: 800px;
+  height: 60vh;
+  background-image: url('/documentation-of-warehouse/assets/images.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.1;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Dark overlay on background */
+.main-content-wrap::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(14, 15, 18, 0.95) 0%,
+    rgba(14, 15, 18, 0.85) 50%,
+    rgba(14, 15, 18, 0.95) 100%
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Ensure content is above the background */
+.main-content,
+.main-content > * {
+  position: relative;
+  z-index: 1;
+}
+
 /* Fix sidebar and content spacing */
 .side-bar {
   display: flex !important;
   flex-direction: column !important;
   background-color: #0b0c0f !important;
   border-right: 1px solid #2a2a2a !important;
+  position: relative;
+  z-index: 10;
 }
 
 /* Remove large gap between sidebar and content */
 .main {
   margin-left: 0 !important;
+  position: relative;
 }
 
 @media (min-width: 50rem) {
@@ -69,17 +116,22 @@ body {
 .site-header {
   background-color: #0b0c0f !important;
   border-bottom: 1px solid #2a2a2a !important;
+  position: relative;
+  z-index: 10;
 }
 
 .site-footer {
   background-color: #0b0c0f !important;
   border-top: 1px solid #2a2a2a !important;
   color: #c9c9c9 !important;
+  position: relative;
+  z-index: 10;
 }
 
 /* Logo styling */
 .site-logo {
-width: 100% !important;
+  max-height: 50px !important;
+  max-width: 150px !important;
   display: block !important;
 }
 
@@ -88,6 +140,12 @@ width: 100% !important;
   background-color: #111217 !important;
   color: #e6e6e6 !important;
   border: 1px solid #2a2a2a !important;
+}
+
+.search-results {
+  background-color: #0b0c0f !important;
+  border: 1px solid #2a2a2a !important;
+  z-index: 100;
 }
 
 /* Navigation links */
@@ -125,6 +183,13 @@ th {
 
 td {
   border: 1px solid #2a2a2a !important;
+}
+
+/* Blockquotes */
+blockquote {
+  background-color: #1a1b1f !important;
+  border-left: 4px solid #8ab4f8 !important;
+  color: #c9c9c9 !important;
 }
 </style>
 
