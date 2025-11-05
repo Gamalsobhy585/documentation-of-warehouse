@@ -1,7 +1,9 @@
 ---
+layout: default
 title: Warehouse Developer Guide
 nav_order: 1
-has_children: true
+description: "ERP Warehouse Developer Guide"
+permalink: /
 ---
 
 # 🏗️ Warehouse Developer Guide
